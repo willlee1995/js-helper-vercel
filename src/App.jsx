@@ -19,8 +19,7 @@ function App() {
   const [question, setQuestion] = useState("");
   const [loading, setLoading] = useState(false);
   const [answer, setAnswer] = useState("");
-  const API_KEY = import.meta.env.VITE_API_KEY;
-  console.log(API_KEY);
+  const API_KEY = process.env.VITE_API_KEY;
   const configuration = new Configuration({
     /*********************************************
 
